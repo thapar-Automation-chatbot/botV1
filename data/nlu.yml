@@ -1,0 +1,686 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hlo
+    - hyy
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: registration_details
+  examples: |
+    - where can i register for summer term ?
+    - when the registration of summer term are available?
+    - when the registration of summer term are starting?
+    - window for registration of summer term?
+    - What are the registration details for the summer semester?
+    - Can you provide information about the registration process?
+    - When is the registration deadline for the upcoming semester?
+    - How do I register for courses this semester?
+    - Tell me about the documents required for registration.
+    - I need to know how to sign up for summer courses.
+    - Where can I find the registration forms?
+    - What's the procedure to register as a new student?
+    - How can I check my registration status?
+    - Can I change my registered courses after the deadline?
+    - Tell me about the registration schedule and important dates.
+    - Can I register for both in-person and online courses?
+    - How do I access the student portal for registration?
+    - Is there a registration guide or handbook available?
+    - Explain the registration fee payment process an forms.
+    - What is the registration confirmation process?
+    - i want to register for Summer term where should i register?
+    - when can i register for summer term?
+- intent: inquire_about_E_grade_self_study
+  examples: |
+    - Can students with E grades opt for self-study?
+    - What is the self-study option for E grade students?
+    - Is self-study allowed for E grades?
+    - When can E grade students choose self-study mode?
+    - What's the minimum marks requirement for E grade students to choose self-study?
+    - How do E grade students select self-study mode?
+    - Can E grade students study on their own?
+    - Tell me about the self-study policy for E grade students.
+    - Do E grade students need to take subjects in regular mode?
+    - Explain the self-study option for students with E grades.
+    - What are the conditions for E grade students to choose self-study?
+    - Is self-study available for E grades if marks are less than 25?
+    - Can students with E grades study independently?
+    - How can E grade students improve their grades through self-study?
+    - When is self-study mode applicable for E grade students?
+    - Can E grade students take subjects in regular mode if marks are low?
+    - Tell me more about E grade self-study conditions.
+    - What happens if E grade students don't meet the marks requirement for self-study?
+    - Is there a minimum marks cutoff for E grade students to choose self-study?
+    - Can E grade students take subjects in regular mode if they scored less than 25?
+    - Explain the criteria for E grade students to opt for self-study.
+    - What's the threshold marks for E grade students to choose self-study?
+    - Can E grade students switch to regular mode if they have low marks?
+    - Is self-study available for E grade students who scored below 25?
+    - can i opt for self study mode if having E grade?
+    - when i can take self study mode in E grade?
+    - how many marks are required to opt self study mode?
+- intent: inquire_about_self_study
+  examples: |
+    - Is self-study allowed for subjects in summer sem
+    - Can you explain the eligibility criteria for self-study mode?
+    - can I apply for self-study mode?
+    - Can I improve my grades during the summer semester in self-study mode?
+    - How can I check my eligibility for self-study mode?
+    - Can I choose self-study for all my subjects in the summer semester?
+    - Is self-study mode available for all courses and subjects?
+    - Can I choose self-study mode if I want to improve my grades during the summer semester?
+    - Can I work on grade improvement while studying in self-study mode?
+    - How can I check if I am eligible for self-study mode during the summer semester?
+    - What steps can I take to determine my eligibility for self-study mode?
+    - Are there specific guidelines or criteria I should follow to assess my eligibility for self-study mode?
+    - How do I verify whether I meet the requirements for self-study mode?
+    - when i am eligible for self study mode?
+- intent: inquire_about_fees_thesis_submission
+  examples: |
+    - What is the thesis submission fee for the summer semester?
+    - How much does it cost to submit a thesis in the summer semester?
+    - Can you provide information about the current thesis submission fee?
+    - Is there a fee for thesis submission during the summer term?
+    - What is the revised thesis submission fee for the summer semester?
+    - How has the thesis submission fee changed for the summer semester?
+    - Can I get a breakdown of the thesis submission fee for the summer semester?
+    - How much does it cost to submit a thesis?
+    - Can you provide information about the fees for thesis submission?
+    - What is the fee structure for thesis submission?
+    - What is the current thesis submission fee?
+    - How much do I need to pay for thesis submission?
+    - Is there a fee for submitting a thesis?
+    - Can you provide information on the thesis submission fee structure?
+    - what is the fees for thesis submission in summer term?
+    - how much do i need to pay for thesis submission?
+- intent: inquire_about_regular_mode_of_study
+  examples: |
+    - What are the criteria for students to be eligible for the regular mode of study?
+    - Which mode can i take if i have X grade?
+    - Which mode can i take if i have F grade?
+    - Which mode can i take if i have R.A grade?
+    - Are there any eligibility criteria for the regular mode of study?
+    - Can you clarify the eligibility criteria for students with B/B-/C/C- grades in the regular mode?
+    - Can you explain the eligibility criteria for regular-study mode?
+    - can I apply for regular study mode?
+    - Can I improve my grades during the summer semester in regular study mode?
+    - How can I check my eligibility for regular study mode?
+    - What are the requirements for students to be eligible for the regular mode of study?
+    - What are the conditions that students need to meet in order to be eligible for the regular mode of study?
+    - What are the factors that determine whether a student is eligible for the regular mode of study?
+    - What are the criteria that are used to assess a student's eligibility for the regular mode of study?
+    - What are the standards that a student must meet in order to be eligible for the regular mode of study?
+    - What is the mode of study that is available to me if I have an X grade?
+    - What are my options for mode of study if I have an X grade?
+    - What are the different modes of study that I can choose from if I have an X grade?
+    - How do I choose the right mode of study for me if I have an X grade?
+    - What is the mode of study that is available to me if I have an F grade?
+    - What are my options for mode of study if I have an F grade?
+    - What are the different modes of study that I can choose from if I have an F grade?
+    - How do I choose the right mode of study for me if I have an F grade?
+    - Can I apply for regular study mode?
+    - which mode can i take with grade RA
+    - am i eligible for regular mode if having F grade?
+- intent: modes_of_study_in_summer_sem
+  examples: |
+    - Can you explain the difference between self-study and regular study modes?
+    - Can I receive academic assistance while in self-study mode?
+    - What is self study mode?
+    - How does self study mode work?
+    - What is  regular mode?
+    - How does regular mode work?
+    - what is difference between self study mode and reugular study mode?
+    - How is self study Mode different from regular mode?
+    - In what modes can i take subjects in summer sem ?
+    - modes of study i can opt in summer term?
+    - what is regular mode?
+    - what is self study mode?
+- intent: inquire_about_fees_for_improvement_and_backlog in summer sem
+  examples: |
+    - what is the fees for summer term ?
+    - what is the fees for summer semester backlog?
+    - What is the fee for improvement in the summer semester?
+    - How much do I need to pay for improving my grades in the summer semester?
+    - Is there a specific fee structure for backlog cases in the summer semester?
+    - Can you provide details on the fees for grade improvement and backlog cases in the summer semester?
+    - Are there different fees for improving grades in self-study mode versus regular mode in the summer semester?
+    - Do I need to pay a fee if I want to clear my backlog subjects in the summer semester?
+    - Are there any additional fees associated with grade improvement or backlog clearance in the summer semester?
+    - What is the fee for grade improvement in the summer semester?
+    - How much does it cost to improve grades in the summer semester?
+    - Can you provide details on the fee structure for grade improvement in the summer semester?
+    - Is there a different fee for grade improvement in self-study mode compared to regular mode during the summer semester?
+    - What is the specific fee amount for grade improvement in the summer semester?
+    - What is the fee for clearing backlog subjects in the summer semester?
+    - How much does it cost to resolve backlog subjects in the summer semester?
+    - Can you provide details on the fee structure for clearing backlog subjects in the summer semester?
+    - Is there a different fee for backlog clearance in self-study mode compared to regular mode during the summer semester?
+    - What is the specific fee amount for addressing backlog subjects in the summer semester?
+    - Is the fee for improvement and backlog clearance the same for all subjects in the summer semester?
+    - Can you provide the exact fee amounts for improvement and backlog cases in the summer semester?
+- intent: inquire_about_subject_limit_per_mode
+  examples: |
+    - What's the maximum number of subjects I can enroll in for self-study?
+    - How many subjects am I allowed to take in regular mode?
+    - Is there a limit to the number of subjects I can choose for self-study?
+    - Can I exceed the subject limit for regular mode?
+    - Tell me the subject enrollment limits for different modes.
+    - What's the maximum number of courses for self-study?
+    - Are there restrictions on the number of subjects for regular mode?
+    - Explain the subject enrollment restrictions in self-study and regular modes.
+    - Subject enrollment limit in self-study?
+    - Subject count limit for regular mode?
+    - How many courses can I register for in self-study and regular modes?
+    - Can I select more than 3 subjects in regular mode?
+    - What is the subject cap for self-study?
+    - Tell me about subject restrictions in different study modes.
+    - Maximum subjects for self-study and regular mode?
+    - Subject limit per semester for self-study and regular mode?
+    - Is there a maximum subject quota for self-study?
+    - What are the subject constraints for regular mode?
+    - What's the subject limit for regular course registration?
+    - Are there limitations on subject choices in different modes?
+    - Subject enrollment restrictions?
+    - Subject count for self-study and regular enrollment?
+    - Explain the subject cap for self-study and regular courses.
+    - Maximum subjects allowed for self-study and regular study?
+    - Subject limit for self-study and regular programs?
+    - Subject enrollment cap for self-study and regular modes?
+    - Can I take more courses in self-study than regular mode?
+    - Subject quotas for self-study and regular mode?
+    - Tell me the subject restrictions for each study mode.
+    - What's the maximum number of subjects for self-study and regular study?
+    - Subject count limitations for self-study and regular modes?
+    - Explain the subject enrollment policies for self-study and regular programs.
+    - Subject limit per mode?
+    - Are there any restrictions on subject choices in different modes of study?
+    - Maximum subject count for self-study and regular courses?
+    - Subject limit for self-study and regular semesters?
+    - How many courses can I enroll in for self-study and regular study?
+    - Can I take more subjects in regular mode than self-study?
+    - Subject quotas for self-study and regular courses?
+    - Subject enrollment details for each mode.
+    - Tell me about the subject enrollment limits in self-study mode.
+    - What's the maximum subject count for regular enrollment?
+    - Explain the subject quota for self-study and regular courses.
+    - Is there a limit on how many subjects I can take in self-study?
+    - Can I exceed the subject limit in self-study mode?
+    - Subject count restrictions for self-study and regular modes?
+    - What is the subject enrollment cap for regular mode?
+    - Subject restrictions for self-study and regular study?
+    - Are there any specific subject count limitations for regular courses?
+    - Subject limit for self-study and regular academic terms?
+    - How many courses am I allowed to register for in regular mode?
+    - Subject quotas for self-study and regular study programs.
+    - how many courses can i apply in summer sem?
+    - can i apply for 1/2/3/4/5/6/7/8/9/10 course in summer semester?
+    - how many courses can i opt in summer semester?
+
+- intent: inquire_about_project_based_course_availability
+  examples: |
+    - Are project-oriented classes available in the summer term?
+    - Can I enroll in the Capstone Project in self-study mode during the summer term?
+    - Tell me about the status of Engineering Design-2 in regular mode for the summer term?
+    - Are there any project-focused courses offered during the summer term?
+    - Is Engineering Design-1 exclusively available in regular mode during the summer term?
+    - How can I register for the Capstone Project during the summer term?
+    - Can you provide information about project-oriented courses in the summer term?
+    - Is it possible to study Engineering Design-2 in self-study mode during the summer term?
+    - What are the choices for project-based courses in the summer term?
+    - Explain the availability of study modes for the Capstone Project during the summer term?
+    - Are there any exceptions or special regulations for project courses during the summer term?
+    - How do I apply for Engineering Design-1 in regular mode during the summer term?
+    - Which project courses are open for enrollment in the summer term?
+    - Tell me more about the self-study options for Engineering Design-1 during the winter term?
+    - Can I take Engineering Design-2 in regular mode during the winter term?
+    - Can you clarify the study options for project courses during the winter term?
+    - What is the deadline for enrolling in project-oriented courses during the winter term?
+    - Can I enhance my grades for the Capstone Project during the winter term?
+    - How are grades determined for project courses during the winter term?
+    - How can I apply for Engineering Design-2 in self-study mode during the winter term?
+    - Can I take Engineering Design-2 in self-study mode during the winter term?
+    - Explain the process of enrolling in project courses during the winter term?
+    - Are there specific prerequisites for self-study enrollment during the winter term?
+    - Tell me about the eligibility criteria for project courses during the winter term?
+    - Can students with prior experience participate in project courses during the winter term?
+    - How does the study mode affect the Capstone Project during the winter term?
+    - What options are available for Engineering Design-1 and Engineering Design-2 during the winter term?
+    - How can I switch from project self-study mode to regular mode during the winter term?
+    - What facilities and resources are available for project-based courses during the winter term?
+    - Tell me about any special programs or events related to project courses during the winter term?
+    - How can I provide feedback or suggestions for project courses during the winter term?
+    - Can I access online materials for project courses during the winter term?
+    - What are the examination and assessment methods for project courses during the winter term?
+    - Can I request accommodations or support services for project courses during the winter term?
+    - Tell me about any industry collaborations or internships associated with project courses during the winter term?
+    - Are there any new project courses introduced in the summer term?
+    - I'm interested in the Capstone Project. Is it available in the summer term?
+    - Do you offer any advanced project courses in the winter term?
+    - How are project courses in self-study mode structured during the summer term?
+    - I'd like to know more about the curriculum of Engineering Design-1 for the summer term.
+- intent: inquire_about_max_grade_achieveable_summer_sem
+  examples: |
+    - What is the highest achievable grade in the summer semester?
+    - Can I earn an A+ grade in the summer semester?
+    - Is there a limit to the maximum grade I can achieve in the summer term?
+    - What is the best grade I can get during the summer semester?
+    - Are there any restrictions on the grades I can earn in the summer semester?
+    - Can I aim for the highest possible grade in summer courses?
+    - Is it possible to achieve a perfect score in the summer semester?
+    - What's the grading scale for the summer semester?
+    - How does grading work in the summer term, and what's the highest grade?
+    - Are there any differences in the grading system for the summer semester compared to regular semesters?
+    - Can I earn an A grade in summer classes?
+    - What is the top grade that students can achieve during the summer semester?
+    - Do grades earned in summer courses count towards my overall GPA?
+    - Are there any limitations on the maximum grade I can attain in summer classes?
+    - Is there a curve for grading in the summer semester?
+    - What is the maximum GPA achievable in summer courses?
+    - Are there grade modifiers for summer classes?
+    - What is the highest letter grade I can earn in the summer semester?
+    - How do summer grades affect my academic record?
+    - Is it possible to get an A- grade in summer courses?
+    - Can I receive an A grade if I excel in the summer term?
+    - Do summer courses use the same grading system as regular semesters?
+    - What's the grading policy for the summer semester?
+    - Are there any grade restrictions for summer classes?
+    - What is the grade distribution like for summer courses?
+    - Can I aim for the highest possible grade in summer classes?
+    - Is there a limit to the highest achievable grade in the summer semester?
+    - How do I earn the highest grade in my summer courses?
+    - Are there any differences in grading for summer and regular classes?
+    - Can I get an A+ in any summer course?
+    - What's the maximum grade I can earn in summer classes?
+    - How are summer grades calculated?
+    - Is it possible to receive a perfect score in a summer course?
+    - What are the grading criteria for the summer semester?
+    - Can I achieve an A grade in any summer course?
+    - How does the grading system work for summer classes?
+    - Are there any special grading rules for summer courses?
+    - What's the highest GPA attainable in the summer semester?
+    - Can I strive for the highest possible grade in summer courses?
+    - How do I achieve top grades in summer classes?
+    - Is there a grade curve for the summer semester?
+    - What's the highest possible grade I can earn in a summer course?
+    - Do summer grades impact my overall academic performance?
+- intent: inquire_about_teacher_assignment_for_modes
+  examples: |
+    - How are instructors assigned when a course is offered in both Self-study and Regular modes?
+    - Can you explain the process of assigning faculty to courses that run in both Self and Regular modes?
+    - What happens when a subject is offered in both Self-study and Regular modes? How is the teacher assigned?
+    - Tell me about the faculty assignment for courses that have Self-study and Regular study options.
+    - When a course is available in both Self-study and Regular modes, how is the instructor selected?
+    - How is faculty assignment handled for subjects that run concurrently in Self-study and Regular modes?
+    - Explain the policy for assigning instructors to courses that are offered in both Self and Regular modes.
+    - What is the procedure for selecting teachers when a course is available in Self-study and Regular modes?
+    - Can you provide details on faculty allocation for courses that run in both Self and Regular modes?
+    - When a course has Self-study and Regular options, who conducts MST, EST, and Sessional sessions?
+    - Describe the faculty assignment process for courses that run in both Self-study and Regular modes.
+    - How does the university decide which instructor to assign when a course is offered in both Self and Regular modes?
+    - Tell me about the policy for faculty allocation when a subject is available in both Self-study and Regular modes.
+    - What happens when a course is taught in both Self-study and Regular modes? How is the teacher chosen?
+    - Can you elaborate on the teacher assignment policy for courses with Self-study and Regular study choices?
+    - How is faculty selection managed for courses that are available in both Self-study and Regular modes?
+    - Explain the guidelines for assigning instructors to courses with Self-study and Regular mode options.
+    - What is the faculty allocation procedure for subjects that have both Self-study and Regular study modes?
+    - When a course is offered in both Self-study and Regular modes, who conducts MST, EST, and Sessional classes?
+    - Describe the process of assigning teachers for courses that run in both Self-study and Regular modes.
+    - How are instructors determined for courses with both Self-study and Regular study options?
+- intent: inquire_about_dropping_subject_in_summer_sem
+  examples: |
+    - Is it possible to remove a course from my summer semester schedule?
+    - What is the procedure for dropping a subject during the summer semester?
+    - Are there any restrictions on the number of subjects I can drop in the summer semester?
+    - Can I drop one subject if I originally registered for three subjects in the summer semester?
+    - How does dropping a subject affect my academic record and progress?
+    - What is the deadline for dropping a subject in the summer semester without academic penalties?
+    - Will I receive a refund if I drop a subject in the summer semester?
+    - Is the summer semester subject dropping fee refundable?
+    - Are there any consequences for dropping a subject in the summer semester?
+    - Can I drop a subject and add a different one in the same summer semester?
+    - Can I drop a subject if I feel overwhelmed with my current course load?
+    - What happens if I miss the deadline for dropping a subject in the summer semester?
+    - Is there an option to temporarily withdraw from a subject in the summer semester?
+    - Are there academic advising services available to discuss subject dropping options?
+    - How does dropping a subject impact my tuition and fees for the summer semester?
+    - Can international students drop subjects in the summer semester?
+    - How do I officially request to drop a subject during the summer semester?
+    - Are there specific forms or documentation required when dropping a subject in the summer semester?
+    - Can I drop a subject in the summer semester?
+    - can i drop subject in summer term?
+- intent: inquire_about_course_re_enrollment_after_improvement
+  examples: |
+    - Can I retake a course to improve my grade if I've already improved it once?
+    - Is it possible to register for a course again after improving the grade?
+    - What are the rules regarding re-enrolling in a course for improvement?
+    - If I've upgraded my grade in a course, can I still take it again?
+    - Am I allowed to repeat a course to enhance my grade after improvement?
+    - Once I've improved my grade in a course, can I register for it again?
+    - Is there a limit to how many times I can take a course to improve my grade?
+    - What happens if I've already enhanced my grade in a course and want to take it again?
+    - Can I retake a course for grade enhancement if I've already done so in the past?
+    - After upgrading a course grade, am I eligible to enroll in it again?
+    - What is the policy regarding re-enrolling in a course after grade improvement?
+    - Is it permissible to register for a course again after achieving a better grade?
+    - How many times can I retake a course to improve my grade?
+    - Are there any restrictions on re-enrolling in a course after grade enhancement?
+    - Can I repeat a course for improvement if I've previously upgraded my grade?
+    - What are the guidelines for registering for a course again after grade improvement?
+    - If I've improved my grade, can I still take the course once more?
+    - Is there a maximum limit on the number of times I can retake a course for improvement?
+    - What happens if I want to re-enroll in a course after already enhancing my grade?
+    - Can I register for a course again if I've already improved my grade in it?
+    - After improving a course grade, can I take the course once more for further improvement?
+    - Are there any restrictions on course re-enrollment after grade enhancement?
+    - How many attempts am I allowed for improving a course grade?
+    - If I've upgraded my grade, can I retake the course for additional improvement?
+    - What are the rules regarding re-enrolling in a course after achieving a better grade?
+    - Can I improve my grade further if I've already enhanced it to a A/A-/B/B-/C/C-?
+    - If I've previously upgraded my grade to an A/A-/B/B-/C/C-, can I attempt further improvement?
+    - What happens if I've already improved my grade to a A/A-/B/B-/C/C- and want to enhance it again?
+    - Is it possible to continue improving my grade after reaching an A/A-/B/B-/C/C- in a course?
+    - Am I allowed to upgrade my grade once more if I've already achieved an A/A-/B/B-/C/C-?
+    - After improving my grade to a A/A-/B/B-/C/C-, can I make additional improvements?
+    - If my grade has already been enhanced to a A/A-/B/B-/C/C-, can I pursue further improvement?
+    - Is there a limit to how many times I can improve my grade in a course?
+    - What are the guidelines for grade improvement if I've already reached an A/A-/B/B-/C/C-?
+    - Can I attempt further grade enhancement after achieving a A/A-/B/B-/C/C- in a course?
+    - If I've already upgraded my grade to a A/A-/B/B-/C/C-, am I eligible for additional improvement?
+    - How many times can I improve my grade if I've already achieved an A/A-/B/B-/C/C-?
+    - Is it permissible to make multiple grade enhancements in the same course?
+    - What happens if I've already improved my grade to a A/A-/B/B-/C/C- and want to try again?
+    - Can I aim for further grade improvement after reaching a A/A-/B/B-/C/C-?
+    - After upgrading my grade to an A/A-/B/B-/C/C-, can I make additional improvements?
+    - If my grade is already enhanced to a A/A-/B/B-/C/C-, can I pursue further improvements?
+    - Is there a maximum limit on the number of times I can enhance my grade?
+    - What are the policies for multiple grade improvements in a course?
+    - Can I continue to improve my grade if I've already reached a A/A-/B/B-/C/C-?
+    - If I've previously upgraded my grade to an A/A-/B/B-/C/C-, can I aim for further improvement?
+    - After enhancing my grade to a A/A-/B/B-/C/C-, can I attempt further improvements?
+    - Is there a restriction on the number of times I can improve my grade?
+    - What happens if I've already improved my grade to a A/A-/B/B-/C/C- or an A/A-/B/B-/C/C- and want to improve it again?
+    - Can I keep trying to enhance my grade after reaching a certain level?
+    - can i retake subject ?
+- intent: inquire_about_course_re_enrollment_backlog
+  examples: |
+    - How can I re-enroll in a course after having a backlog?
+    - What's the procedure for re-enrollment in a course if I have a backlog?
+    - Can you explain the process of re-enrolling in a course with a backlog?
+    - Are there any specific requirements for course re-enrollment after a backlog?
+    - When can I apply for course re-enrollment if I have a backlog?
+    - Is there a deadline for re-enrolling in a course after a backlog?
+    - Do I need to pay an additional fee for course re-enrollment after a backlog?
+    - Can I choose any course for re-enrollment after a backlog, or are there restrictions?
+    - Is re-enrollment possible for all courses, including specialized ones, after a backlog?
+    - How do I check my eligibility for course re-enrollment following a backlog?
+    - Are there any limitations on the number of courses I can re-enroll in after backlogs?
+    - Is there a separate application process for course re-enrollment after a backlog?
+    - Can I re-enroll in multiple courses simultaneously after having backlogs?
+    - Can I re-enroll in a course if I've failed it in a previous attempt?
+    - Are there any restrictions on re-enrolling in courses with labs or practical components after a backlog?
+    - What should I do if I want to re-enroll in a course I previously had a backlog in?
+    - Is there a limit on the number of times I can re-enroll in the same course after a backlog?
+    - Can I re-enroll in a course I withdrew from earlier due to a backlog?
+    - Are there any penalties for not re-enrolling in a course after a backlog?
+    - If I've scored an E/X grade in a course I previously re-enrolled in, can I re-enroll for the same course again?
+    - Are there limitations on re-enrolling in a course after achieving an E/X grade in it?
+    - How many times am I allowed to re-enroll in a course if I continue to score E/X grades?
+    - What is the procedure for re-enrolling in a course for which I received an E/X grade?
+    - Can I re-enroll in a course if I've received E/X grades for it in multiple attempts?
+    - Are there any additional requirements for students wishing to re-enroll after E/X grades?
+    - How do E/X grades impact my eligibility to re-enroll in a specific course?
+    - Are there any academic advising services for students re-enrolling in courses with E/X grades?
+    - Can I appeal or request special consideration if I wish to re-enroll after receiving an E/X grade?
+    - Will the new grade replace the previous E/X grade if I successfully re-enroll in a course?
+    - Can I re-enroll in a course for which I received an E/X grade even if it's no longer part of the curriculum?
+    - can i re enroll in subject ?
+- intent: tenure_of_summer_term
+  examples: |
+    - When does the summer term start and end?
+    - What is the timeline for the summer term?
+    - How long is the summer term's duration?
+    - Tell me about the summer term's timeline.
+    - What is the schedule for the summer term?
+    - When should I expect the summer term to begin?
+    - How long do I need to study during the summer term?
+    - What is the duration of the summer term's academic sessions?
+    - Can you provide information about the summer term's start and end dates?
+    - What are the specific dates for the summer term?
+    - Tell me about the summer term's academic calendar.
+    - When does the summer term's academic activities start and finish?
+    - What is the timeframe for the summer term's academic sessions?
+    - How long is the summer term's academic schedule?
+    - When do I need to be prepared for the summer term's commencement?
+    - Is there a specific timeframe for the summer term's academic activities?
+    - Can you specify the start and end dates of the summer term?
+    - Tell me when the summer term begins and when it ends.
+    - What are the summer term's academic session dates?
+    - When should I mark my calendar for the summer term's start and end?
+    - Is there a specific period for the summer term's academic activities?
+    - Can you provide information about the summer term's duration and academic sessions?
+    - Tell me about the summer term's academic sessions and duration.
+    - How long is the summer term, and when does it start?
+    - Can you provide me with details about the summer term's start and end dates?
+    - When does the summer term's academic calendar begin and end?
+    - What is the summer term's academic schedule like in terms of start and end dates?
+    - How can I prepare for the start of the summer term?
+    - What are the key dates I should remember for the summer term?
+    - i wish to leave the summer term ?
+    - what is tenure of summer term?
+    - when will summer term start?
+    - when summer term will end?
+    - what is duration of summer term?
+    - what is the time table for summer term?
+- intent: time_table
+  examples: |
+    - Can you provide me with the summer semester timetable and schedule?
+    - I need to know the timetable for the summer semester.
+    - Where can I find the timetable for the summer semester courses?
+    - Tell me about the schedule for the summer semester.
+    - How can I access the summer semester timetable?
+    - Provide me with the link to the summer semester timetable.
+    - Is the summer semester timetable available online?
+    - Can you direct me to the summer semester timetable?
+    - I want to check the timetable for my summer semester courses.
+    - What's the link to the summer semester timetable?
+    - How do I access the timetable for my summer semester classes?
+    - Tell me where I can find the summer semester timetable.
+    - Is there an online portal for the summer semester timetable?
+    - Can you provide me with the link to the summer semester's class schedule?
+    - I need to check my summer semester class timetable. How can I do that?
+    - How do I access the summer semester class timetable online?
+    - Tell me how to find the timetable for summer semester courses.
+    - What's the process to access the summer semester timetable?
+    - Provide me with information about the summer semester class timetable.
+    - Can you give me the website where I can view the summer semester timetable?
+    - Where do I go to see the summer semester timetable?
+    - What's the link to the summer semester class schedule?
+    - How can I find my summer semester class timetable online?
+    - where i can get time table for summer term?
+    - can you give me the time table for summer term?
+- intent: asking_about_summer_semester
+  examples: |
+    - Description about summer semester?
+    - Define what is summer semester?
+    - Can you explain me about Summer Semester?
+    - How Summer semester can be helpful to students who have got lower grades?
+    - what is summer semester?
+    - Is Summer semester really helpful?
+    - Should I consider summer semester for my marks improvement ?
+    - which semester is for upgradation of marks ?
+    - What is meant by a summer semester?
+    - Can you explain the concept of summer semester?
+    - Define summer semester?
+    - What does summer semester entail?
+    - How does a summer semester differ from the regular academic year?
+    - Who is eligible for the summer semester?
+    - What are the eligibility criteria for the summer semester?
+    - what is grade upgradation?
+    - can i go for upgradation of scores?
+    - can my scores be increased ?
+    - can my scores be higher ?
+    - what if i want to upgrade my scores?
+    - what is the use of grade upgradation ?
+- intent: inquire_about_eligibility_for_medal_scholarship_upon_upgradation
+  examples: |
+    - What happens to my scholarship if I upgrade my grades?
+    - Can I still get a scholarship after improving my grades?
+    - Explain the eligibility criteria for medals after grade upgradation.
+    - Do upgraded grades affect my chances of getting a scholarship?
+    - How does grade upgradation impact medal eligibility?
+    - Tell me about scholarships and upgradation rules.
+    - Will my scholarship status change if I improve my grades?
+    - Are there any changes in scholarship eligibility after upgrading?
+    - What are the scholarship guidelines after grade improvement?
+    - Can I receive a medal after upgrading my course grades?
+    - am i elogible for medal if taking summer term?
+    - can i get medal if i qualified in summer term?
+- intent: Upgrade_grade_decline_A_A-
+  examples: |
+    - Can I upgrade my grade from A- to A during the summer semester?
+    - Is there an opportunity to improve my A- grade from the previous semester in the summer?
+    - How can I work on raising my A- to an A in the summer session?
+    - Are there any courses or programs available specifically to improve an A- grade?
+    - Can I retake a course to boost my A- to an A in the summer semester?
+    - What options do I have if I want to upgrade my A- grade from last semester?
+    - I received an A- last semester; can you explain how I can upgrade it to an A this summer?
+    - Is there a summer term where I can focus on improving my A- grade?
+    - Are there any academic support services to help me achieve an A from an A-?
+    - Can you provide guidance on upgrading a grade from A- to A during the summer semester?
+    - What steps should I take to upgrade my A- grade to an A this summer?
+    - Are there any specific courses or workshops aimed at improving an A- to an A?
+    - How can I retake exams or assignments to upgrade my A- to an A in the summer?
+    - Can you suggest a study plan for upgrading an A- to an A during the summer term?
+    - Are there any scholarships or incentives for students who successfully upgrade their grades from A- to A in the summer semester?
+    - Is there a specific deadline for grade upgrades during the summer session?
+    - Can I consult with a professor or academic advisor to discuss upgrading my A- to an A?
+    - Are there any resources or materials available to help me achieve an A from an A- this summer?
+    - What's the process for upgrading a grade, and where can I get more information about it?
+    - Can you provide examples of students who successfully upgraded their A- to an A in the summer semester, and how they did it?
+    - can i upgrade from A- to A in summer term?
+    - what if my grade is A .Can i go for upgradation ?
+    - Can i upgrade my grade from A-?
+    - students with grade A are eligible for grade upgradation?
+    - Can i upgrade my grade from A- to A?
+- intent: Grade_upgrade
+  examples: |
+    - Can I upgrade my grade from B to an A this semester?
+    - Is there an opportunity to improve my B grade to an A?
+    - How can I work on raising my grade from B to an A?
+    - Are there any courses or programs available to upgrade a B to an A?
+    - Can you provide guidance on upgrading my B grade to an A?
+    - What steps should I take to upgrade my grade from B to A?
+    - Can I retake specific courses to boost my B to an A?
+    - Are there any scholarships or incentives for students who upgrade their grades from B to A?
+    - Is it possible to upgrade my grade from B- to B this term?
+    - How can I work on improving my B- to a B?
+    - Can you suggest strategies for upgrading my B- to B?
+    - Are there any courses or workshops aimed at improving a B- to B?
+    - Can I retake exams or assignments to upgrade my B- to B?
+    - What resources are available to help me achieve a B from a B-?
+    - Can I upgrade my grade from C to a B this semester?
+    - Is there an opportunity to improve my C grade to a B?
+    - How can I work on raising my grade from C to a B?
+    - Are there any courses or programs available to upgrade a C to a B?
+    - Can you provide guidance on upgrading my C grade to a B?
+    - What steps should I take to upgrade my grade from C to B?
+    - Can I retake specific courses to boost my C to a B?
+    - Is it possible to upgrade my grade from C- to C this term?
+    - How can I work on improving my C- to a C?
+    - Can you suggest strategies for upgrading my C- to C?
+    - Are there any courses or workshops aimed at improving a C- to C?
+    - Can I retake exams or assignments to upgrade my C- to C?
+    - What resources are available to help me achieve a C from a C-?
+    - Can you provide a timeline for upgrading a grade from C- to C?
+    - Can I upgrade my grade from X to a passing grade this semester?
+    - Is there an opportunity to change my grade from X to a passing grade?
+    - How can I work on raising my grade from X to a passing grade?
+    - Are there any courses or programs available to upgrade a grade from X to passing?
+    - Can you provide guidance on upgrading my X grade to a passing grade?
+    - What steps should I take to upgrade my grade from X to passing?
+    - Can I retake specific courses or assignments to achieve a passing grade?
+    - Is it possible to upgrade my grade from F to a passing grade this term?
+    - How can I work on improving my F to a passing grade?
+    - Can you suggest strategies for upgrading my F to a passing grade?
+    - Are there any courses or workshops aimed at helping me achieve a passing grade from an F?
+    - Can I retake exams or assignments to upgrade my F to a passing grade?
+    - What resources are available to help me pass a course after receiving an F?
+    - Can you provide a timeline for upgrading a grade from F to passing?
+    - can i take course if having B grade?
+    - is grade upgradation possible ?
+    - Can I upgrade my grades ?
+    - i have scored B- grade ,can i go for grade upgradation?
+    - if i have c-,can i improve it .
+    - Can I upgrade my grade if I have C?
+    - Can i upgrade my grade if I have C-/B-/B/C/X/F?
+    - can my grades be improved.
+    - what if i want to upgrade my grades?
+    - if i have X grade can i improve my grades?
+    - can my grades be improved?
+    - Can I go for improvement of grades?
+
+    
+- intent: refund_policy_summer_sem
+  examples: |
+    - What is the university's refund policy for summer semester fees?
+    - Can I get a refund for my summer semester tuition and fees if I need to withdraw from all my courses?
+    - How do I initiate the process for a refund of my summer semester fees?
+    - Is there a deadline by which I need to request a refund for my summer semester fees?
+    - Are there any circumstances under which the university automatically issues a refund?
+    - What fees are eligible for a refund in the summer semester?
+    - Can I request a refund for fees associated with campus services, such as housing or meal plans, if I no longer need them during the summer?
+    - Are there any non-refundable fees that I should be aware of for the summer semester?
+    - Refunding Specific Fees
+    - If I initially registered for three subjects in the summer semester, can I get a refund for one of them?
+    - Is it possible to receive a partial refund if I decide to drop one of the courses I enrolled in for the summer semester?
+    - Can I request a refund for a single course if I find it necessary to reduce my workload for the summer?
+    - What's the process for obtaining a refund for a specific subject if I'm taking multiple courses in the summer?
+    - Are there any conditions or deadlines I should be aware of when requesting a refund for one of my summer semester subjects?
+    - I've enrolled in several courses for the summer. Can I get a refund for one of them without affecting the others?
+    - How does the refund process work for individual subjects within the summer semester?
+    - Can I drop a course and receive a refund while still continuing with my other summer semester courses?
+    - What's the policy for course-specific refunds during the summer session?
+    - If I choose to drop a subject now, will I receive a proportional refund for that specific course?
+    - Are there any fees or penalties associated with requesting a refund for one of my summer semester subjects?
+    - I'm considering dropping one of my summer courses. Can you explain the refund procedure for such cases?
+    - Can I get a refund for one subject if my circumstances change, but I want to continue with the others?
+    - How much of a refund can I expect if I drop just one of my summer semester subjects?
+    - Is there a maximum number of subjects for which I can request refunds in the summer semester?
+    - What documentation or forms do I need to submit to initiate a refund for a specific course in the summer?
+    - Can you clarify the refund eligibility criteria for individual summer semester subjects?
+    - If I decide to withdraw from one course in the summer semester, how will it affect my tuition and fees?
+    - Are there any restrictions on which subjects I can request refunds for in the summer semester?
+    - How can I calculate the refund amount if I choose to drop one of my summer courses?
+    - How long does it typically take to process a refund for summer semester fees?
+    - Can I track the status of my refund request for the summer semester online?
+    - If I've already paid my summer semester fees but need to withdraw, when can I expect to receive my refund?
+    - Are there any delays in refund processing during the summer semester compared to the regular academic year?
+    - What method is used to issue refunds for summer semester fees – check, direct deposit, or another option?
+    - Can I request an expedited refund for my summer semester fees if I have urgent financial needs?
+    - 
+    - can i take refund if i drop the summer term?
+    - i want to take refund of fees i dont want to continue this summer semester sucks?
+    - i want to get back my fees?

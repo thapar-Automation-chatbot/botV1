@@ -1,0 +1,362 @@
+# Test Stories
+
+# Inquiring About Project-Based Course Availability
+- story: Inquiring About Project-Based Course Availability - 1
+  steps:
+  - user: |
+      Are project-based courses available in the summer semester?
+  - intent: inquire_about_project_based_course_availability
+  - action: utter_inquire_about_project_based_course_availability
+
+- story: Inquiring About Project-Based Course Availability - 2
+  steps:
+  - user: |
+      Can I take project-based courses during the summer semester?
+  - intent: inquire_about_project_based_course_availability
+  - action: utter_inquire_about_project_based_course_availability
+
+- story: Inquiring About Project-Based Course Availability - 3
+  steps:
+  - user: |
+      Tell me about the availability of project-based courses.
+  - intent: inquire_about_project_based_course_availability
+  - action: utter_inquire_about_project_based_course_availability
+
+# Inquiring About Subject Limit in Summer Semester
+- story: Inquiring About Subject Limit in Summer Semester - 1
+  steps:
+  - user: |
+      Is there a limit to the number of subjects I can take in the summer semester?
+  - intent: inquire_about_subject_limit_per_mode
+  - action: utter_inquire_about_subject_limit_per_mode
+
+- story: Inquiring About Subject Limit in Summer Semester - 2
+  steps:
+  - user: |
+      What is the maximum number of subjects allowed in the summer term?
+  - intent: inquire_about_subject_limit_per_mode
+  - action: utter_inquire_about_subject_limit_per_mode
+
+- story: Inquiring About Subject Limit in Summer Semester - 3
+  steps:
+  - user: |
+      Can I enroll in multiple subjects during the summer semester?
+  - intent: inquire_about_subject_limit_per_mode
+  - action: utter_inquire_about_subject_limit_per_mode
+
+# Inquiring About Fees for Improvement and Backlog in Summer Semester
+- story: Inquiring About Fees for Improvement and Backlog in Summer Semester - 1
+  steps:
+  - user: |
+      How much are the fees for improvement and backlog cases in the summer semester?
+  - intent: inquire_about_fees_for_improvement_and_backlog in summer sem
+  - action: utter_inquire_about_fees_for_improvement_and_backlog in summer sem
+
+- story: Inquiring About Fees for Improvement and Backlog in Summer Semester - 2
+  steps:
+  - user: |
+      Tell me about the fees for improving grades in the summer term.
+  - intent: inquire_about_fees_for_improvement_and_backlog in summer sem
+  - action: utter_inquire_about_fees_for_improvement_and_backlog in summer sem
+
+# Modes of Study in Summer Semester
+- story: Inquiring About Modes of Study in Summer Semester - 1
+  steps:
+  - user: |
+      What are the different study modes available in the summer semester?
+  - intent: modes_of_study_in_summer_sem
+  - action: utter_modes_of_study_in_summer_sem
+
+- story: Inquiring About Modes of Study in Summer Semester - 2
+  steps:
+  - user: |
+      Explain the modes of study in the summer term.
+  - intent: modes_of_study_in_summer_sem
+  - action: utter_modes_of_study_in_summer_sem
+
+# Inquiring About Regular Mode of Study
+- story: Inquiring About Regular Mode of Study - 1
+  steps:
+  - user: |
+      Can I take regular mode of study for grade improvement?
+  - intent: inquire_about_regular_mode_of_study
+  - action: utter_inquire_about_regular_mode_of_study
+
+- story: Inquiring About Regular Mode of Study - 2
+  steps:
+  - user: |
+      Tell me about the regular mode of study in the summer semester.
+  - intent: inquire_about_regular_mode_of_study
+  - action: utter_inquire_about_regular_mode_of_study
+
+# Inquiring About Thesis Submission Fees
+- story: Inquiring About Thesis Submission Fees - 1
+  steps:
+  - user: |
+      What are the proposed thesis submission fees?
+  - intent: inquire_about_fees_thesis_submission
+  - action: utter_inquire_about_fees_thesis_submission
+
+- story: Inquiring About Thesis Submission Fees - 2
+  steps:
+  - user: |
+      How much do I need to pay for thesis submission?
+  - intent: inquire_about_fees_thesis_submission
+  - action: utter_inquire_about_fees_thesis_submission
+
+# Inquiring About Self-Study Eligibility
+- story: Inquiring About Self-Study Eligibility - 1
+  steps:
+  - user: |
+      Who is eligible for self-study mode?
+  - intent: inquire_about_self_study
+  - action: utter_inquire_about_self_study
+
+- story: Inquiring About Self-Study Eligibility - 2
+  steps:
+  - user: |
+      Can I choose self-study mode for my courses?
+  - intent: inquire_about_self_study
+  - action: utter_inquire_about_self_study
+
+# Inquiring About E Grade Self-Study Eligibility
+- story: Inquiring About E Grade Self-Study Eligibility - 1
+  steps:
+  - user: |
+      Can students with E grades choose self-study mode?
+  - intent: inquire_about_E_grade_self_study
+  - action: utter_inquire_about_E_grade_self_study
+
+- story: Inquiring About E Grade Self-Study Eligibility - 2
+  steps:
+  - user: |
+      Tell me about E grade students and self-study mode.
+  - intent: inquire_about_E_grade_self_study
+  - action: utter_inquire_about_E_grade_self_study
+
+# Greeting
+- story: Greeting - 1
+  steps:
+  - user: |
+      Hello! How can I assist you today?
+  - intent: greet
+  - action: utter_greet
+
+- story: Greeting - 2
+  steps:
+  - user: |
+      Hi there! What can I help you with?
+  - intent: greet
+  - action: utter_greet
+
+# Goodbye
+- story: Goodbye - 1
+  steps:
+  - user: |
+      Goodbye! If you have any more questions, feel free to ask.
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Goodbye - 2
+  steps:
+  - user: |
+      See you later! Have a great day.
+  - intent: goodbye
+  - action: utter_goodbye
+
+# Registration Details
+- story: Inquiring About Registration Details - 1
+  steps:
+  - user: |
+      When does the summer term registration start?
+  - intent: registration_details
+  - action: utter_registration_details
+
+- story: Inquiring About Registration Details - 2
+  steps:
+  - user: |
+      How can I register for the summer semester?
+  - intent: registration_details
+  - action: utter_registration_details
+
+# Inquiring About Max Grade Achievable in Summer Semester
+- story: Inquiring About Max Grade Achievable in Summer Semester - 1
+  steps:
+  - user: |
+      What is the maximum grade achievable in the summer semester?
+  - intent: inquire_about_max_grade_achieveable_summer_sem
+  - action: utter_inquire_about_max_grade_achieveable_summer_sem
+
+- story: Inquiring About Max Grade Achievable in Summer Semester - 2
+  steps:
+  - user: |
+      Can I get an A grade in the summer term?
+  - intent: inquire_about_max_grade_achieveable_summer_sem
+  - action: utter_inquire_about_max_grade_achieveable_summer_sem
+
+# Inquiring About Teacher Assignment for Modes
+- story: Inquiring About Teacher Assignment for Modes - 1
+  steps:
+  - user: |
+      How are teachers assigned for different study modes?
+  - intent: inquire_about_teacher_assignment_for_modes
+  - action: utter_inquire_about_teacher_assignment_for_modes
+
+- story: Inquiring About Teacher Assignment for Modes - 2
+  steps:
+  - user: |
+      Tell me more about the faculty assignment for self-study.
+  - intent: inquire_about_teacher_assignment_for_modes
+  - action: utter_inquire_about_teacher_assignment_for_modes
+
+# Inquiring About Dropping Subject in Summer Semester
+- story: Inquiring About Dropping Subject in Summer Semester - 1
+  steps:
+  - user: |
+      What is the procedure for dropping a subject in the summer semester?
+  - intent: inquire_about_dropping_subject_in_summer_sem
+  - action: utter_inquire_about_dropping_subject_in_summer_sem
+
+- story: Inquiring About Dropping Subject in Summer Semester - 2
+  steps:
+  - user: |
+      How can I drop a course during the summer term?
+  - intent: inquire_about_dropping_subject_in_summer_sem
+  - action: utter_inquire_about_dropping_subject_in_summer_sem
+
+# Inquiring About Course Re-enrollment After Improvement
+- story: Inquiring About Course Re-enrollment After Improvement - 1
+  steps:
+  - user: |
+      Can I re-enroll in a course after improving my grade?
+  - intent: inquire_about_course_re_enrollment_after_improvement
+  - action: utter_inquire_about_course_re_enrollment_after_improvement
+
+- story: Inquiring About Course Re-enrollment After Improvement - 2
+  steps:
+  - user: |
+      Tell me more about re-enrollment after grade improvement.
+  - intent: inquire_about_course_re_enrollment_after_improvement
+  - action: utter_inquire_about_course_re_enrollment_after_improvement
+
+# Inquiring About Course Re-enrollment for Backlog
+- story: Inquiring About Course Re-enrollment for Backlog - 1
+  steps:
+  - user: |
+      How many times can I enroll in a backlog subject?
+  - intent: inquire_about_course_re_enrollment_backlog
+  - action: utter_inquire_about_course_re_enrollment_backlog
+
+- story: Inquiring About Course Re-enrollment for Backlog - 2
+  steps:
+  - user: |
+      Tell me about the process of re-enrolling in backlog courses.
+  - intent: inquire_about_course_re_enrollment_backlog
+  - action: utter_inquire_about_course_re_enrollment_backlog
+
+# Tenure of Summer Term
+- story: Inquiring About Tenure of Summer Term - 1
+  steps:
+  - user: |
+      What is the duration of the summer term?
+  - intent: tenure_of_summer_term
+  - action: utter_tenure_of_summer_term
+
+- story: Inquiring About Tenure of Summer Term - 2
+  steps:
+  - user: |
+      How long does the summer semester last?
+  - intent: tenure_of_summer_term
+  - action: utter_tenure_of_summer_term
+
+# Time Table for Summer Semester
+- story: Inquiring About Time Table for Summer Semester - 1
+  steps:
+  - user: |
+      Can you provide me with the summer semester class timetable?
+  - intent: time_table
+  - action: utter_time_table
+
+- story: Inquiring About Time Table for Summer Semester - 2
+  steps:
+  - user: |
+      Where can I find the summer term class schedule?
+  - intent: time_table
+  - action: utter_time_table
+
+# Asking About Summer Semester
+- story: Asking About Summer Semester - 1
+  steps:
+  - user: |
+      Tell me more about the summer semester and auxiliary examination.
+  - intent: asking_about_summer_semester
+  - action: utter_asking_about_summer_semester
+
+- story: Asking About Summer Semester - 2
+  steps:
+  - user: |
+      What are the key features of the summer term and auxiliary examination?
+  - intent: asking_about_summer_semester
+  - action: utter_asking_about_summer_semester
+
+# Inquiring About Eligibility for Medal/Scholarship Upon Upgradation
+- story: Inquiring About Eligibility for Medal/Scholarship Upon Upgradation - 1
+  steps:
+  - user: |
+      Do students who upgrade their grades in the summer semester qualify for medals or scholarships?
+  - intent: inquire_about_eligibility_for_medal_scholarship_upon_upgradation
+  - action: utter_inquire_about_eligibility_for_medal_scholarship_upon_upgradation
+
+- story: Inquiring About Eligibility for Medal/Scholarship Upon Upgradation - 2
+  steps:
+  - user: |
+      Are upgraded grades considered for medals and scholarships?
+  - intent: inquire_about_eligibility_for_medal_scholarship_upon_upgradation
+  - action: utter_inquire_about_eligibility_for_medal_scholarship_upon_upgradation
+
+# Declining Grade Upgrade for A and A-
+- story: Declining Grade Upgrade for A and A- - 1
+  steps:
+  - user: |
+      I have an A grade. Can I upgrade it?
+  - intent: Upgrade_grade_decline_A_A-
+  - action: utter_Upgrade_grade_decline_A_A-
+
+- story: Declining Grade Upgrade for A and A- - 2
+  steps:
+  - user: |
+      Is it possible to upgrade an A- grade?
+  - intent: Upgrade_grade_decline_A_A-
+  - action: utter_Upgrade_grade_decline_A_A-
+
+# Eligibility for Grade Upgrade
+- story: Eligibility for Grade Upgrade - 1
+  steps:
+  - user: |
+      Who is eligible for grade upgrades in the summer semester?
+  - intent: Grade_upgrade
+  - action: utter_Grade_upgrade
+
+- story: Eligibility for Grade Upgrade - 2
+  steps:
+  - user: |
+      Can students with C grades upgrade their grades?
+  - intent: Grade_upgrade
+  - action: utter_Grade_upgrade
+
+# Refund Policy for Summer Semester
+- story: Refund Policy for Summer Semester - 1
+  steps:
+  - user: |
+      What is the refund policy for the summer semester?
+  - intent: refund_policy_summer_sem
+  - action: utter_refund_policy_summer_sem
+
+- story: Refund Policy for Summer Semester - 2
+  steps:
+  - user: |
+      Can I get a refund if I decide not to continue with the summer term?
+  - intent: refund_policy_summer_sem
+  - action: utter_refund_policy_summer_sem
+
+# Continue creating similar test stories for other intents.

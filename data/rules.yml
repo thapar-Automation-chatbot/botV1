@@ -1,0 +1,126 @@
+version: "3.1"
+
+rules:
+
+- rule: greet your user
+  steps:
+  - intent: greet 
+  - action: utter_greet
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Handle registration queries
+  steps:
+  - intent: registration_details
+  - action: utter_registration_details
+
+- rule: Respond to inquire_about_E_grade_self_study
+  steps: 
+  - intent: inquire_about_E_grade_self_study
+  - action: utter_inquire_about_E_grade_self_study
+
+
+- rule: Respond to inquire_about_self_study
+  steps: 
+  - intent: inquire_about_self_study
+  - action: utter_inquire_about_self_study
+
+
+- rule: Respond to inquire_about_fees_thesis_submission
+  steps: 
+  - intent: inquire_about_fees_thesis_submission
+  - action: utter_inquire_about_fees_thesis_submission
+
+
+- rule: Respond to inquire_about_regular_mode_of_study
+  steps: 
+  - intent: inquire_about_regular_mode_of_study
+  - action: utter_inquire_about_regular_mode_of_study
+
+
+- rule: Respond to modes_of_study_in_summer_sem
+  steps: 
+  - intent: modes_of_study_in_summer_sem
+  - action: utter_modes_of_study_in_summer_sem
+
+
+- rule: Respond to inquire_about_fees_for_improvement_and_backlog in summer sem
+  steps: 
+  - intent: inquire_about_fees_for_improvement_and_backlog in summer sem
+  - action: utter_inquire_about_fees_for_improvement_and_backlog in summer sem
+
+
+- rule: Respond to inquire_about_subject_limit_per_mode
+  steps: 
+  - intent: inquire_about_subject_limit_per_mode
+  - action: utter_inquire_about_subject_limit_per_mode
+
+
+- rule: Respond to inquire_about_project_based_course_availability
+  steps: 
+  - intent: inquire_about_project_based_course_availability
+  - action: utter_inquire_about_project_based_course_availability
+
+
+- rule: Maximum_grade_one_get_in_summer_sem
+  steps:
+  - intent: inquire_about_max_grade_achieveable_summer_sem
+  - action: utter_inquire_about_max_grade_achieveable_summer_sem
+
+- rule: Teacher_modes
+  steps:
+  - intent: inquire_about_teacher_assignment_for_modes
+  - action: utter_inquire_about_teacher_assignment_for_modes
+
+- rule: can I Take Drop or not 
+  steps:
+  - intent: inquire_about_dropping_subject_in_summer_sem
+  - action: utter_inquire_about_dropping_subject_in_summer_sem
+
+- rule: inquire_about_course_re_enrollment_after_improvement
+  steps: 
+  - intent: inquire_about_course_re_enrollment_after_improvement
+  - action: utter_inquire_about_course_re_enrollment_after_improvement
+
+- rule: inquire_about_course_re_enrollment_backlog 
+  steps:
+  - intent: inquire_about_course_re_enrollment_backlog 
+  - action: utter_inquire_about_course_re_enrollment_backlog 
+
+- rule: tenure_of_summer_term
+  steps:
+  - intent: tenure_of_summer_term
+  - action: utter_tenure_of_summer_term
+
+- rule: time_table
+  steps:
+  - intent: time_table
+  - action: utter_time_table
+
+- rule: asking_about_summer_semester
+  steps:
+  - intent: asking_about_summer_semester
+  - action: utter_asking_about_summer_semester
+
+- rule: inquire_about_eligibility_for_medal_scholarship_upon_upgradation
+  steps:
+  - intent: inquire_about_eligibility_for_medal_scholarship_upon_upgradation
+  - action: utter_inquire_about_eligibility_for_medal_scholarship_upon_upgradation
+
+- rule: Upgrade_grade_decline_A_A-
+  steps:
+  - intent: Upgrade_grade_decline_A_A-
+  - action: utter_Upgrade_grade_decline_A_A-
+
+- rule: Grade_upgrade
+  steps: 
+  - intent: Grade_upgrade
+  - action: utter_Grade_upgrade
+
+- rule: refund_policy_summer_sem
+  steps:
+  - intent: refund_policy_summer_sem
+  - action: utter_refund_policy_summer_sem

@@ -1,0 +1,25 @@
+version: "3.1"
+
+stories:
+
+
+
+- story: interactive_story_1
+  steps:
+  - intent: inquire_about_eligibility_for_medal_scholarship_upon_upgradation
+  - action: utter_inquire_about_eligibility_for_medal_scholarship_upon_upgradation
+  - intent: Upgrade_grade_decline_A_A-
+  - action: utter_Upgrade_grade_decline_A_A-
+  - intent: inquire_about_eligibility_for_medal_scholarship_upon_upgradation
+  - action: utter_inquire_about_eligibility_for_medal_scholarship_upon_upgradation
+  - intent: Grade_upgrade
+  - action: utter_Grade_upgrade
+  - intent: refund_policy_summer_sem
+  - action: utter_refund_policy_summer_sem
+  - intent: refund_policy_summer_sem
+  - action: utter_refund_policy_summer_sem
+
+- story: interactive_story_1
+  steps:
+  - intent: Grade_upgrade
+  - action: utter_Grade_upgrade

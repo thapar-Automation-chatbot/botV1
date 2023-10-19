@@ -1,0 +1,91 @@
+version: '3.1'
+intents:
+- Grade_upgrade
+- Upgrade_grade_decline_A_A-
+- asking_about_summer_semester
+- goodbye
+- greet
+- inquire_about_E_grade_self_study
+- inquire_about_course_re_enrollment_after_improvement
+- inquire_about_course_re_enrollment_backlog
+- inquire_about_dropping_subject_in_summer_sem
+- inquire_about_eligibility_for_medal_scholarship_upon_upgradation
+- inquire_about_fees_for_improvement_and_backlog in summer sem
+- inquire_about_fees_thesis_submission
+- inquire_about_max_grade_achieveable_summer_sem
+- inquire_about_project_based_course_availability
+- inquire_about_regular_mode_of_study
+- inquire_about_self_study
+- inquire_about_subject_limit_per_mode
+- inquire_about_teacher_assignment_for_modes
+- modes_of_study_in_summer_sem
+- refund_policy_summer_sem
+- registration_details
+- tenure_of_summer_term
+- time_table
+responses:
+  utter_inquire_about_project_based_course_availability:
+  - text: The project based courses such as Engineering Design-1, Engineering Design-2, Capstone Project, etc. cannot be offered as self-study mode. And will only be offered in regular mode.
+  utter_inquire_about_subject_limit_per_mode:
+  - text: The maximum number of subjects the one take in summer term is 3 (either regular or self study mode)
+  utter_inquire_about_fees_for_improvement_and_backlog in summer sem:
+  - text: For improvement and backlog cases in the summer semester, the proposed fee is Rs. 15,000. This fee is applicable for those seeking to improve their grades or address backlog subjects during the summer semester.
+  utter_modes_of_study_in_summer_sem:
+  - text: There are two modes of Study in Summer term - Regular Mode(where you have to attend the classes regularly) and Self Study Mode(where you are provided an online course and material to follow up).In both Cases the mode of evaluation is same.
+  utter_inquire_about_regular_mode_of_study:
+  - text: Students can take regular mode of study for backlogs or for  grade improvement for grades other than A/A-
+  utter_inquire_about_fees_thesis_submission:
+  - text: The proposed agenda items suggest a revision of thesis submission fees for PG (M.E. / M.Tech. / MSc. / MA) from Rs. 500 to Rs. 1,000
+  utter_inquire_about_self_study:
+  - text: Students with B / B- / C / C- grades are eligible for both Self Study mode.
+  utter_inquire_about_E_grade_self_study:
+  - text: Students with an E grade can choose self-study mode if they had scored 25 marks or more out of 100
+  utter_greet:
+  - text: Hello! How can I assist you today?
+  utter_goodbye:
+  - text: Goodbye! If you have any more questions, feel free to ask.
+  utter_registration_details:
+  - text: Registration for the summer term usually starts in late May and lasts for 10 days. Access the registration form [here](registration_form_link) to complete your registration.
+  utter_inquire_about_max_grade_achieveable_summer_sem:
+  - text: The max Grade that can be achieved in Summer Semester depends on the strength of you original batch.
+  utter_inquire_about_teacher_assignment_for_modes:
+  - text: To deal with any subject running in Self and Regular mode (both), only one faculty will be assigned. In this scenario the faculty will get paid for regular course only. Assigned faculty will conduct MST / EST / Sessional as per the requirement of the course.
+  utter_inquire_about_dropping_subject_in_summer_sem:
+  - text: There's a specific procedure to drop a subject in summer sem and fees will be non refundable.
+  utter_inquire_about_course_re_enrollment_after_improvement:
+  - text: In case a candidate has improved the grade in a particular course, the same course can’t be registered again for improvement
+  utter_inquire_about_course_re_enrollment_backlog:
+  - text: You can enroll for as many time as you want for the backlog subjects whenever the registerations will open next time. Final results will be changed according to that only.
+  utter_tenure_of_summer_term:
+  - text: Certainly! The summer term's duration is approximately six weeks, starting in the first week of June and ending in mid-July, which aligns with its academic sessions.
+  utter_time_table:
+  - text: Information about the summer semester class timetable can be found [here](summer_semester_timetable_link).
+  utter_asking_about_summer_semester:
+  - text: The summer term, conducted during the auxiliary examination period in July or January, provides students with the opportunity to improve grades for B, B-, C, and C- and take exams in self-study or regular mode, with specific grade criteria and fees.
+  utter_inquire_about_eligibility_for_medal_scholarship_upon_upgradation:
+  - text: Student who has improved his/her grades during summer semester will not be considered for medal / scholarship / upgradation on the basis of improved grades. Marks / grades obtained only in/during 1 st attempt of the course will only be considered for medal / scholarship / upgradation.
+  utter_Upgrade_grade_decline_A_A-:
+  - text: Please note that students with grade A and A- cannot go for grade upgradation.
+  utter_Grade_upgrade:
+  - text: Students with B / B- / C / C- / E / X / F grades are eligible for grade upgrades.
+  utter_refund_policy_summer_sem:
+  - text: Please note that fees cannot be refunded once the summer semester has begun.
+session_config:
+  session_expiration_time: 60
+actions:
+- utter_Grade_upgrade
+- utter_refund_policy_summer_sem
+- utter_inquire_about_eligibility_for_medal_scholarship_upon_upgradation
+- utter_Upgrade_grade_decline_A_A-
+- utter_inquire_about_course_re_enrollment_backlog
+- utter_time_table
+- utter_inquire_about_course_re_enrollment_after_improvement
+- utter_tenure_of_summer_term
+- utter_inquire_about_dropping_subject_in_summer_sem
+- utter_greet
+- utter_registration_details
+- utter_inquire_about_E_grade_self_study
+- utter_inquire_about_fees_thesis_submission
+- utter_inquire_about_regular_mode_of_study
+- utter_inquire_about_self_study
+- utter_modes_of_study_in_summer_sem
